@@ -5,7 +5,7 @@ const ProductPricing = (props) => {
   return (
     <div className="product-pricing">
       <span className="product-pricing__sold">
-        {props.productData.condition == "new" ? "Nuevo" : "Usado"} -{" "}
+        {props.productData.condition === "new" ? "Nuevo" : "Usado"} -{" "}
         {props.productData.sold_quantity} Vendidos
       </span>
       <h1 className="product-pricing__title">{props.productData.title}</h1>

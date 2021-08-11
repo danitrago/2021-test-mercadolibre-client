@@ -21,7 +21,7 @@ const Search = () => {
         setProducts(data.items);
         setBreadCrums(data.categories);
       });
-  }, []);
+  }, [query]);
 
   return (
     <React.Fragment>

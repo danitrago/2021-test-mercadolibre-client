@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LogoImg from "../static/logo.png";
 import SearchImg from "../static/search.png";
 
@@ -9,7 +8,7 @@ const Header = () => {
       <div className="main-header__row container">
         <div className="main-header__logo">
           <a href="/">
-            <img src={LogoImg} alt="Logo Mercado Libre" srcset="" />
+            <img src={LogoImg} alt="Logo Mercado Libre" />
           </a>
         </div>
         <div className="main-header__search">
@@ -21,7 +20,7 @@ const Header = () => {
               required
             />
             <button type="submit">
-              <img src={SearchImg} alt="Buscar" srcset="" />
+              <img src={SearchImg} alt="Buscar" />
             </button>
           </form>
         </div>
