@@ -13,6 +13,7 @@ const ProductDetails = () => {
     fetch(`${API_URL}/items/${id}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data.item)
         setProductData(data.item);
       });
   }, []);
@@ -20,7 +21,7 @@ const ProductDetails = () => {
   return (
     <React.Fragment>
       <div className="container">
-        <Breadcrums items={[{ name: "Category" }]} />
+        <Breadcrums items={productData.categories} />
       </div>
       <div className="container">
         <MainCard>

@@ -10,7 +10,7 @@ const ProductPricing = (props) => {
       </span>
       <h1 className="product-pricing__title">{props.productData.title}</h1>
       <span className="product-pricing__price">
-        {formatCurrency.format(props.productData.price?.amount)}
+        {formatCurrency.format(props.productData.price?.amount || 0)}
       </span>
       <button className="product-pricing__buy">Comprar</button>
     </div>
