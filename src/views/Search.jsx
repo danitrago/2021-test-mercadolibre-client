@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-import { API_URL } from "../helpers";
 import Breadcrums from "../components/Breadcrums";
 import MainCard from "../components/MainCard";
 import ProductCard from "../components/ProductCard";
+import { API_URL } from "../helpers";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -37,23 +36,6 @@ const Search = () => {
         </MainCard>
       </div>
     </React.Fragment>
-    // <div>
-    //   Search results for: {query.get("search")}
-    //   <hr />
-    //   {products ? (
-    //     <ul>
-    //       {products.map((product) => {
-    //         return (
-    //           <li key={product.id}>
-    //             {product.title} <Link to={`/items/${product.id}`}>Ver</Link>
-    //           </li>
-    //         );
-    //       })}
-    //     </ul>
-    //   ) : (
-    //     "Empty"
-    //   )}
-    // </div>
   );
 };
 
