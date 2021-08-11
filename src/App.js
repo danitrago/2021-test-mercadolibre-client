@@ -5,6 +5,7 @@ import Search from "./views/Search";
 
 function App() {
   return (
+    // HOC High Order Component, componente de alto nivel para Layout
     <Layout>
       <Router>
         <Switch>
