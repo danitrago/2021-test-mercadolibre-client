@@ -5,7 +5,6 @@ const Layout = (props) => {
   return (
     <div>
       <Header />
-      <hr />
       {props.children}
     </div>
   );

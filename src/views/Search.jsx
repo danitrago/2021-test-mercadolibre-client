@@ -22,8 +22,20 @@ const Search = () => {
   return (
     <div>
       Search results for: {query.get("search")}
-      <Link to="/items/123">Product</Link>
-      {JSON.stringify(products)}
+      <hr />
+      {products ? (
+        <ul>
+          {products.map((product) => {
+            return (
+              <li key={product.id}>
+                {product.title} <Link to={`/items/${product.id}`}>Ver</Link>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        "Empty"
+      )}
     </div>
   );
 };
