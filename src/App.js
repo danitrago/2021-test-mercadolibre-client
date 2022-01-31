@@ -7,7 +7,7 @@ function App() {
   return (
     // HOC High Order Component, componente de alto nivel para Layout
     <Layout>
-      Ejemplo v2
+      Ejemplo v3
       <Router>
         <Switch>
           <Route path="/items/:id">
