@@ -14,6 +14,8 @@ function App() {
             <ProductDetails />
           </Route>
           <Route path="/items">
+
+            {/* DEmo */}
             <Search />
           </Route>
           <Route path="/"></Route>
